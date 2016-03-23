@@ -17,6 +17,6 @@ RUN     cd /root && git clone https://github.com/dnssec-workshop/dnssec-data && 
 RUN     mkdir -p /var/log/supervisor
 
 EXPOSE  22 53
-CMD     [ "/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/dnssec-bind.conf" ]
+CMD     [ "/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/dnssec-sldns-b.conf" ]
 
 # vim: set syntax=docker tabstop=2 expandtab:
